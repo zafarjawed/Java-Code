@@ -1,0 +1,25 @@
+interface Car{
+    //public abstract void start();     //abstract method
+    void start();
+    void move();
+    void stop();
+}
+class Car1 implements Car{              //implement interface class
+    public void start(){                //normal method
+        System.out.println("Car is Starting..!!");
+    }
+    public void move(){
+        System.out.println("Car is Moving..!!");
+    }
+    public void stop() {
+        System.out.println("Car is Stoping..!!");
+    }
+}
+class Main{
+    public static void main(String [] args){
+        Car1 c = new Car1();
+        c.start();
+        c.move();
+        c.stop();
+    }
+}
