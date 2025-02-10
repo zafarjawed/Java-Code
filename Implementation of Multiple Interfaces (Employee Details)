@@ -1,0 +1,62 @@
+// Multiple interfaces
+interface EmployeeDetails {
+    void employee_details1();
+    void employee_details2();
+}
+
+class Employee1 implements EmployeeDetails {
+    public void employee_details1() {
+        System.out.println("*EMPLOYEE DETAILS 1*");
+        System.out.println("====================");
+        System.out.println("Employee ID: 101");
+        System.out.println("Employee Name: Rajesh Kumar");
+        System.out.println("Employee Salary: $60,000");
+        System.out.println("Employee Location: Bangalore");
+        System.out.println("Employee Company: Infosys");
+    }
+    public void employee_details2() {
+        System.out.println("*EMPLOYEE DETAILS 2*");
+        System.out.println("====================");
+        System.out.println("Employee ID: 102");
+        System.out.println("Employee Name: Priya Sharma");
+        System.out.println("Employee Salary: $65,000");
+        System.out.println("Employee Location: Mumbai");
+        System.out.println("Employee Company: TCS");
+    }
+}
+
+class Employee2 implements EmployeeDetails {
+    public void employee_details1() {
+        System.out.println("*EMPLOYEE DETAILS 1*");
+        System.out.println("====================");
+        System.out.println("Employee ID: 103");
+        System.out.println("Employee Name: Ankit Verma");
+        System.out.println("Employee Salary: $70,000");
+        System.out.println("Employee Location: Delhi");
+        System.out.println("Employee Company: Wipro");
+    }
+    public void employee_details2() {
+        System.out.println("*EMPLOYEE DETAILS 2*");
+        System.out.println("====================");
+        System.out.println("Employee ID: 104");
+        System.out.println("Employee Name: Neha Gupta");
+        System.out.println("Employee Salary: $75,000");
+        System.out.println("Employee Location: Hyderabad");
+        System.out.println("Employee Company: HCL");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Employee1 emp1 = new Employee1();
+        Employee2 emp2 = new Employee2();
+
+        System.out.println("Details of Employee1:");
+        emp1.employee_details1();
+        emp1.employee_details2();
+
+        System.out.println("Details of Employee2:");
+        emp2.employee_details1();
+        emp2.employee_details2();
+    }
+}
