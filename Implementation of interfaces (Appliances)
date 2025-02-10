@@ -1,0 +1,15 @@
+interface Appliances {
+    //public abstract void start();     //abstract method
+    void start();                       //interface method
+}
+class lightbulb implements Appliances{              //implement interface class
+    public void start(){                //normal method
+        System.out.println("Bulb is Glowing..!!");
+    }
+}
+class Main{
+    public static void main(String [] args){
+        lightbulb c = new lightbulb();
+        c.start();
+    }
+}
