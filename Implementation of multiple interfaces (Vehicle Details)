@@ -1,0 +1,61 @@
+// Multiple interfaces
+interface Vehicles {
+    void vehicle_details1();
+    void vehicle_details2();
+}
+
+class Car1 implements Vehicles {
+    public void vehicle_details1() {
+        System.out.println("*VEHICLE DETAILS 1*");
+        System.out.println("===================");
+        System.out.println("Car Name : Mitsubishi Rt350");
+        System.out.println("Car Company : Mitsubishi");
+        System.out.println("Car Price : $450,000");
+        System.out.println("Car Owner Details: Akira");
+    }
+
+    public void vehicle_details2() {
+        System.out.println("*VEHICLE DETAILS 2*");
+        System.out.println("===================");
+        System.out.println("Car Name : Mitsubishi Rt450");
+        System.out.println("Car Company : Mitsubishi");
+        System.out.println("Car Price : $500,000");
+        System.out.println("Car Owner Details: Hiroshi");
+    }
+}
+
+class Car2 implements Vehicles {
+
+    public void vehicle_details1() {
+        System.out.println("*VEHICLE DETAILS 1*");
+        System.out.println("===================");
+        System.out.println("Car Name : Nissan Altima");
+        System.out.println("Car Company : Nissan");
+        System.out.println("Car Price : $300,000");
+        System.out.println("Car Owner Details: Kenji");
+    }
+
+    public void vehicle_details2() {
+        System.out.println("*VEHICLE DETAILS 2*");
+        System.out.println("===================");
+        System.out.println("Car Name : Nissan GTR");
+        System.out.println("Car Company : Nissan");
+        System.out.println("Car Price : $700,000");
+        System.out.println("Car Owner Details: Takumi");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Car1 car1 = new Car1();
+        Car2 car2 = new Car2();
+
+        System.out.println("Details of Car1:");
+        car1.vehicle_details1();
+        car1.vehicle_details2();
+
+        System.out.println("\nDetails of Car2:");
+        car2.vehicle_details1();
+        car2.vehicle_details2();
+    }
+}
